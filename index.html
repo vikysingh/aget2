@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Aget -Agenzia Digitale</title>
+</head>
+
+<body>
+    <nav class="nav">nav</nav>
+    <main class="main">
+        <div class="main_agency">
+            <h1 class="title">
+                AGENCY
+            </h1>
+        </div>
+        <div class="main_lower_row">
+            <div class="main_work">
+                <h1 class="title">
+                    WORK
+                </h1>
+            </div>
+            <div class="main_about">
+                <h1 class="title">
+                    ABOUT
+                </h1>
+            </div>
+        </div>
+    </main>
+
+    <section class="agency_section">
+        <h2 class="title agency_title">Aget</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Ducimus neque in assumenda, odio obcaecati quis reprehenderit.
+        </p>
+        <div class="project_section">
+
+            <div class="project_card">
+                <img class="project_img" alt="Progetto Nome" src="assets/coca-cola.jpg">
+                <a href="#" class="go_to_project_btn">
+                    PROGETTO
+                </a>
+                <h4 class="title project_title">Titolo</h4>
+                <p class="project_description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Voluptas nihil modi, esse aliquid dolorem ratione tempora.
+                </p>
+            </div>
+
+            <div class="project_card">
+                <img class="project_img" alt="Progetto Nome" src="assets/coca-cola.jpg">
+                <a href="#" class="go_to_project_btn">
+                    PROGETTO
+                </a>
+                <h4 class="title project_title">Titolo</h4>
+                <p class="project_description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Voluptas nihil modi, esse aliquid dolorem ratione tempora.
+                </p>
+            </div>
+
+            <div class="project_card">
+                <img class="project_img" alt="Progetto Nome" src="assets/coca-cola.jpg">
+                <a href="#" class="go_to_project_btn">
+                    PROGETTO
+                </a>
+                <h4 class="title project_title">Titolo</h4>
+                <p class="project_description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Voluptas nihil modi, esse aliquid dolorem ratione tempora.
+                </p>
+            </div>
+
+        </div>
+
+        <section class="client_section">
+            <h2 class=" title client_title">
+                NOSTRI CLIENTI
+            </h2>
+            <div class="client_container">client container</div>
+        </section>
+        <footer class="footer_section">
+            footer
+        </footer>
+    </section>
+
+    <section class="project_section main_project_section">
+        <div class="project_card">
+            <img class="project_img" alt="Progetto Nome" src="assets/coca-cola.jpg">
+            <a href="#" class="go_to_project_btn">
+                PROGETTO
+            </a>
+            <h4 class="title project_title">Titolo</h4>
+            <p class="project_description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptas nihil modi, esse aliquid dolorem ratione tempora.
+            </p>
+        </div>
+
+        <div class="project_card">
+            <img class="project_img" alt="Progetto Nome" src="assets/coca-cola.jpg">
+            <a href="#" class="go_to_project_btn">
+                PROGETTO
+            </a>
+            <h4 class="title project_title">Titolo</h4>
+            <p class="project_description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptas nihil modi, esse aliquid dolorem ratione tempora.
+            </p>
+        </div>
+
+        <div class="project_card">
+            <img class="project_img" alt="Progetto Nome" src="assets/coca-cola.jpg">
+            <a href="#" class="go_to_project_btn">
+                PROGETTO
+            </a>
+            <h4 class="title project_title">Titolo</h4>
+            <p class="project_description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptas nihil modi, esse aliquid dolorem ratione tempora.
+            </p>
+        </div>
+    </section>
+
+    <section class="about_section">
+        <h2 class="title about_title">About</h2>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/gsap.min.js"></script>
+    <script>
+        document.querySelector(".main_agency").addEventListener("click", () => {
+            gsap.to(".agency_section", {
+                transform: 'scale(1)',
+                duration: 1
+            })
+        })
+    </script>
+</body>
+
+</html>
