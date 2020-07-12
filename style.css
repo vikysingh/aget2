@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 @import url('./Agencystyle.css');
@@ -7,13 +7,13 @@
 body {
     margin: 0;
     padding: 0;
-    max-width: 100vw;
+    max-width: 100vw !important;
     /* max-height: 100vh; */
-    overflow-x: hidden;
+    overflow-x: hidden !important;
 }
 
 .title {
-    font-family: 'Montserrat Subrayada', sans-serif;
+    font-family: 'Raleway', sans-serif;
     color: white;
     text-decoration: none;
     /* letter-spacing: 1rem; */
@@ -80,11 +80,23 @@ ul {
     color: #00547a;
 }
 
+.agency_transitioner {
+    height: 100vh;
+    width: 100vw;
+    background-color: #2ed8b1;
+    z-index: 200;
+    position: absolute;
+    top: 0;
+    right: -100%;
+    display: none;
+}
+
 .client_section {
     width: 90%;
     float: right;
     /* background-color: pink; */
     padding: 4vh 0vh;
+    display: none;
 }
 
 .client_title {
@@ -112,8 +124,9 @@ ul {
 }
 
 .footer_section {
-    height: 30vh;
+    height: 35vh;
     width: 100%;
+    padding-top: 10%;
     /* background-color: yellowgreen; */
     /* position: relative;
     top: 60vh; */
@@ -132,7 +145,17 @@ ul {
     margin: 10px 0px;
 }
 
+.about_section {
+    display: none;
+}
+
 @media (max-width: 450px) {
+    body {
+        /* max-height: 100vh !important; */
+        max-width: 100% !important;
+        overflow-x: hidden !important;
+    }
+    
     .title {
         font-size: 1rem;
         margin-left: 5%;
@@ -147,6 +170,9 @@ ul {
 
     .main {
         width: 100%;
+        height: 100vh;
+        width: 100vw;
+        overflow: hidden !important;
         grid-template-columns: 100%;
         grid-template-rows: 70% 30%;
     }
@@ -194,7 +220,7 @@ ul {
         /* background-color: yellowgreen; */
         /* display: block; */
         position: relative;
-        margin-top: 130%;
+        margin-top: -10%;
         flex-direction: column;
         justify-content: center;
     }
