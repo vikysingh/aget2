@@ -103,7 +103,6 @@
         width: 100%;
         height: auto;
         margin-bottom: 8vh;
-        margin-top: 5vh;
         /* padding-bottom: 0; */
         padding-left: 0%;
     }
@@ -160,5 +159,38 @@
     .main_project_section {
         margin-left: 5%;
         display: none;
+    }
+}
+
+@media (max-width: 780px) {
+    .project_section {
+        min-height: 70vh;
+    }
+    .project_card {
+        margin: initial 10px;
+        width: 30%;
+    }
+    .project_description {
+        font-size: 1rem;
+        width: 90%;
+    }
+    .project_header_title {
+        left: -22%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .project_header_title {
+        margin-top: 30vh;
+        margin-left: -8%;
+    }
+
+    .project_section {
+        height: 75vh;
+        padding-bottom: 0vh;
+    }
+
+    .project_card {
+        width: 30%;
     }
 }

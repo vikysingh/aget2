@@ -81,3 +81,21 @@
         margin-top: 16%;
     }
 }
+
+@media (max-width: 780px) {
+    .agency_section_header {
+        /* background-color: pink; */
+        min-height: 50vh;
+    }
+    .agency_description {
+        /* background-color: red; */
+        min-width: 90%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .agency_section_header {
+        /* background-color: red; */
+        height: 40vh;
+    }
+}
