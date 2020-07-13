@@ -3,14 +3,19 @@
 
 document.addEventListener("DOMContentLoaded", () => {
     document.querySelector(".main_agency").addEventListener("click", () => {
-        agencyAnimate()
+        agencyAnimate(".agency_section")
+        // animateColorer()
+    })
+
+    document.querySelector(".main_work").addEventListener("click", () => {
+        agencyAnimate(".main_project_section")
         // animateColorer()
     })
 })
 
 const txt = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus neque in assumenda, odio obcaecati quis reprehenderit."
 
-function agencyAnimate() {
+function agencyAnimate(element) {
     let tl = gsap.timeline()
     tl
         .to(".agency_transitioner", {
@@ -26,7 +31,7 @@ function agencyAnimate() {
         //     duration: 0.9,
         //     right: "0%"
         // })
-        .to(".agency_section", {
+        .to(element, {
             // transform: 'scale(1)',
             duration: 0,
             display: "block",
