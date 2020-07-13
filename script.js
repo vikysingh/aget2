@@ -11,6 +11,11 @@ document.addEventListener("DOMContentLoaded", () => {
         agencyAnimate(".main_project_section")
         // animateColorer()
     })
+
+    document.querySelector(".main_about").addEventListener("click", () => {
+        agencyAnimate(".about_section")
+        // animateColorer()
+    })
 })
 
 const txt = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus neque in assumenda, odio obcaecati quis reprehenderit."
