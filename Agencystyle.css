@@ -4,6 +4,7 @@
     width: 100%;
     height: 100%;
     background-color: #2f434c;
+    /* background-color: #fff; */
 }
 
 .agency_section {
@@ -42,6 +43,12 @@
     margin-top: -4%;
 }
 
+@media (max-width: 360px) {
+    .agency_section_header {
+        min-height: 60vh !important;
+    }
+}
+
 @media (max-width: 450px) {
     
     .main_agency {
@@ -57,13 +64,11 @@
         padding-top: 5%;
         position: absolute;
         top: 0%;
-        background-color: #fff;
     }
 
     .agency_section_header {
-        /* background-color: pink; */
-        height: 60vh;
-        padding-bottom: 5vh;
+        min-height: 70vh;
+        padding-bottom: 0vh;
     }
 
     .agency_title {
@@ -84,18 +89,15 @@
 
 @media (max-width: 780px) {
     .agency_section_header {
-        /* background-color: pink; */
         min-height: 50vh;
     }
     .agency_description {
-        /* background-color: red; */
         min-width: 90%;
     }
 }
 
 @media (max-width: 1024px) {
     .agency_section_header {
-        /* background-color: red; */
         height: 40vh;
     }
 }

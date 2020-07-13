@@ -4,7 +4,7 @@
 document.addEventListener("DOMContentLoaded", () => {
     document.querySelector(".main_agency").addEventListener("click", () => {
         agencyAnimate()
-        animateColorer()
+        // animateColorer()
     })
 })
 
@@ -29,7 +29,8 @@ function agencyAnimate() {
         .to(".agency_section", {
             // transform: 'scale(1)',
             duration: 0,
-            display: "block"
+            display: "block",
+            width: "100vw"
             // delay: 5
         })
         .to(".agency_transitioner", {
