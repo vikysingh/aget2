@@ -11,8 +11,6 @@
     max-width: 100%;
     min-height: 100vh;
     overflow-x: hidden;
-    padding-left: 5%;
-    padding-top: 5%;
     position: absolute;
     top: 0%;
     background-color: #fff;
@@ -21,8 +19,10 @@
 }
 
 .agency_section_header {
-    /* background-color: pink; */
-    height: 78vh;
+    background-color: pink;
+    height: 70vh;
+    padding-top: 5%;
+    width: 100%;
 }
 
 .agency_title {
@@ -36,20 +36,39 @@
 
 .agency_description {
     margin-left: 5%;
-    max-width: 50%;
-    /* background-color: pink; */
+    width: 50%;
     font-size: 2rem;
     font-weight: lighter;
     margin-top: -4%;
 }
 
-@media (max-width: 360px) {
+@media (max-width: 1024px) {
     .agency_section_header {
-        min-height: 60vh !important;
+        height: 35vh;
+    }
+
+    .agency_description {
+        width: 85%;
     }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 768px) {
+    .agency_section_header {
+        height: 45vh;
+    }
+
+    .agency_title {
+        font-size: 4rem;
+    }
+
+    .agency_description {
+        width: 80%;
+        font-size: 1.7rem;
+        margin-top: 5vh;
+    }
+}
+
+@media only screen and (max-width: 500px) {
     
     .main_agency {
         grid-column: 1 / -1;
@@ -57,17 +76,14 @@
     }
 
     .agency_section {
-        max-width: 100%;
         height: auto;
         overflow-x: hidden;
-        padding-left: 5%;
-        padding-top: 5%;
         position: absolute;
         top: 0%;
     }
 
     .agency_section_header {
-        min-height: 70vh;
+        height: 70vh;
         padding-bottom: 0vh;
     }
 
@@ -81,23 +97,8 @@
 
     .agency_description {
         font-size: 1.6rem;
-        min-width: 90%;
+        background-color: yellow;
         line-height: 2.2rem !important;
         margin-top: 16%;
-    }
-}
-
-@media (max-width: 780px) {
-    .agency_section_header {
-        min-height: 50vh;
-    }
-    .agency_description {
-        min-width: 90%;
-    }
-}
-
-@media (max-width: 1024px) {
-    .agency_section_header {
-        height: 40vh;
     }
 }
