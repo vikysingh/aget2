@@ -15,8 +15,6 @@
     justify-content: space-around;
     align-items: flex-start;
 
-    /* background-color: teal; */
-
     padding: 0;
 }
 
@@ -27,7 +25,6 @@
     z-index: 20;
     margin: 0;
     flex-shrink: 1;
-    /* background-color: red; */
 }
 
 .project_card1 > .project_img {
@@ -90,10 +87,14 @@
     display: none;
 }
 
+@media only screen and (max-width: 1024px) {
+    .project_section {
+        height: 50vh;
+    }
+}
 
 @media only screen and (max-width: 500px) {
     .project_section{
-        background-color: teal;
         min-height: 320vh;
         padding: 5vh 0vh;
     }
