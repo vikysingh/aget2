@@ -21,11 +21,13 @@ document.addEventListener("DOMContentLoaded", () => {
 const txt = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus neque in assumenda, odio obcaecati quis reprehenderit."
 const bgColors = {
     main_agency: "#2f434c",
+    main_agency_bg_video: "#2f434c",
     main_work: "#ec1358",
     main_about: "#5ebfea"
 }
 
 function agencyAnimate(element, colorClass) {
+    console.log(colorClass)
     let tl = gsap.timeline()
     let transitioner = document.querySelector(".agency_transitioner")
 
@@ -37,12 +39,10 @@ function agencyAnimate(element, colorClass) {
             display: "block"
         })
         .to(transitioner, {
-            // delay: 3,
-            duration: 0.5,
+            duration: 1,
             right: "0%"
         })
         .to(element, {
-            // transform: 'scale(1)',
             duration: 0,
             display: "block",
             width: "100vw",
