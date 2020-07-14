@@ -63,6 +63,7 @@
 
 .about_section_our_team {
     min-height: 100vh;
+    display: none;
 }
 
 .about_section_our_team > h2 {
@@ -245,10 +246,6 @@
         margin-left: 5%;
     }
 
-    .about_section_our_team {
-        display: none;
-    }
-
     .about_section_team_row {
         width: 100%;
         min-height: 60vh;
@@ -273,11 +270,5 @@
         padding: 12px 0;
         padding-left: 5%;
         width: 50%;
-    }
-}
-
-@media (max-width: 350px) {
-    .about_section_our_team {
-        display: none !important;
     }
 }
