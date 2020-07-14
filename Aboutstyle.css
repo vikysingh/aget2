@@ -1,0 +1,263 @@
+.about_section {
+    display: none;
+    position: absolute;
+    top: 0px;
+    width: 100vw;
+    min-height: 110vh;
+    padding: 0;
+    background-color: #fff;
+}
+
+.about_section_header {
+    height: 50vh;
+    width: 100%;
+    margin: 0;
+    padding-left: 10%;
+}
+
+.about_section_header > h1 {
+    color: #000;
+    font-size: 4rem;
+}
+
+.about_section_header > p {
+    font-size: 1.5rem;
+    width: 85%;
+}
+
+.about_section_services {
+    width: 100%;
+    padding: 5vh 0;
+}
+
+.about_section_services_colorer {
+    height: 70vh;
+    width: 50vw;
+    background-color: tomato;
+}
+
+.about_section_services_colorer > h2 {
+    transform: rotateZ(-90deg);
+    color: #fff;
+    font-weight: bolder;
+    font-size: 7rem;
+    position: relative;
+    top: -14vh;
+}
+
+.about_section_services_ul {
+    width: auto;
+    height: 40vh;
+
+    font-size: 1.4rem;
+    font-weight: bolder;
+    text-transform: uppercase;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: absolute;
+    left: 40vw;
+    top: 85vh;
+}
+
+.about_section_our_team {
+    min-height: 100vh;
+}
+
+.about_section_our_team > h2 {
+    color: #ec1358;
+    margin-left: 5%;
+    font-weight: bolder;
+}
+
+.about_section_team_content_container {
+    min-height: 100vh;
+    width: 100%;
+}
+
+.about_section_team_row {
+    height: 100%;
+    width: 80%;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.about_team_row1, .about_team_row3 {
+    margin-left: 20%;
+}
+
+.about_section_team_card {
+    width: 25%;
+    height: 80%;
+}
+
+.about_section_team_card > img{
+    width: 100%;
+    height: 100%;
+}
+
+.about_section_team_card > h4 {
+    position: relative;
+    top: -40%;
+    height: auto;
+    width: 60%;
+    padding: 20px 0;
+    background-color: #000;
+    color: #fff;
+    padding-left: 5%;
+}
+
+@media only screen and (max-width: 1024px) {
+    body {
+        max-width: 100vw !important;
+        overflow-x: hidden !important;
+    }
+    .about_section_header {
+        /* background-color: red; */
+        padding-top: 5%;
+        padding-left: 5%;
+        height: 30vh;
+        width: 95%;
+    }
+
+    .about_section_services_colorer {
+        width: 60%;
+    }
+
+    .about_section_services {
+        background-color: pink;
+        min-width: 100vw;
+        height: 72vh;
+    }
+
+    .about_section_services_ul {
+        position: relative;
+        top: -35vh;
+        left: calc(20vw + 20%);
+        width: 40%;
+        height: 30%;
+    }
+
+    .about_section_our_team {
+        min-height: 68vh;
+    }
+
+    .about_section_our_team > h2 {
+        font-size: 2.3rem;
+        margin-top: 4vh;
+    }
+
+    .about_section_team_content_container {
+        min-height: 60vh;
+    }
+
+    .about_section_team_row {
+        /* background-color: brown; */
+        /* height: 90%; */
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .about_section_team_card {
+        /* background-color: red; */
+        width: 30%;
+        height: 90%;
+        overflow: hidden;
+    }
+
+    .about_section_team_card > img {
+        transform: scale(2.5);
+        transform-origin: center center;
+    }
+
+    .about_section_team_card > h4 {
+        font-size: 0.9rem;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .about_section {
+        max-width: 100vw;
+        overflow-x: hidden;
+    }
+
+    .about_section_header {
+        height: 60vh;
+        padding-left: 4%;
+        padding-top: 5%;
+    }
+
+    .about_section_header > h1 {
+        font-size: 3rem;
+        margin-left: 0;
+        width: 90%;
+    }
+
+    .about_section_header > p{
+        font-size: 1.2rem;
+        margin-top: 15%;
+    }
+
+    .about_section_services {
+        height: 100vh;
+        padding: 0;
+    }
+
+    .about_section_services_colorer {
+        width: 90%;
+        height: 100vh;
+    }
+
+    .about_section_services_colorer > h2 {
+        font-size: 3rem;
+        top: -8vh;
+    }
+
+    .about_section_services_ul {
+        height: 20vh;
+        position: relative;
+        top: -70vh;
+        left: 0%;
+        width: 100%;
+    }
+
+    .about_section_services_ul > li {
+        font-size: 1rem;
+        letter-spacing: unset;
+    }
+
+    .about_section_our_team > h2 {
+        margin-left: 5%;
+    }
+
+    .about_section_team_row {
+        width: 100%;
+        min-height: 60vh;
+        margin: 0;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .about_section_team_card {
+        width: 80%;
+        margin: 20px 0;
+    }
+
+    .about_section_team_card > img {
+        min-height: 140% !important;
+    }
+
+    .about_section_team_card > h4 {
+        margin-top: -16%;
+        font: 0.8rem;
+        padding: 12px 0;
+        padding-left: 5%;
+        width: 50%;
+    }
+}
