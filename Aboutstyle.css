@@ -63,7 +63,7 @@
 
 .about_section_our_team {
     min-height: 100vh;
-    display: none;
+    display: none !important;
 }
 
 .about_section_our_team > h2 {
@@ -75,7 +75,7 @@
 .about_section_team_content_container {
     min-height: 100vh;
     width: 100%;
-    background-color: red;
+    background-color: yellowgreen;
 }
 
 .about_section_team_row {
