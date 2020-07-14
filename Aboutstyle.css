@@ -245,6 +245,10 @@
         margin-left: 5%;
     }
 
+    .about_section_team_content_container {
+        display: none;
+    }
+
     .about_section_team_row {
         width: 100%;
         min-height: 60vh;
