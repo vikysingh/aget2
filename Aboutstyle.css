@@ -278,6 +278,6 @@
 
 @media (max-width: 350px) {
     .about_section_our_team {
-        display: none;
+        display: none !important;
     }
 }
