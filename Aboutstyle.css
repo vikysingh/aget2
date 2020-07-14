@@ -259,9 +259,9 @@
         margin: 20px 0;
     }
 
-    .about_section_team_card > img {
+    /* .about_section_team_card > img {
         min-height: 140% !important;
-    }
+    } */
 
     .about_section_team_card > h4 {
         margin-top: -16%;
