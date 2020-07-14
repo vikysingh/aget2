@@ -83,6 +83,7 @@
     .agency_section_header {
         height: 70vh;
         padding-bottom: 0vh;
+        display: none;
     }
 
     .agency_title {
