@@ -62,14 +62,6 @@ ul {
     position: absolute;
     font-size: 4rem;
     top: 5%;
-    opacity: 0.5;
-    transition: 400ms all ease;
-    transform-origin: center center;
-}
-
-.main_agency:hover > h1 {
-    opacity: 1;
-    transform: translateY(30px);
 }
 
 .main_lower_row {
@@ -107,6 +99,17 @@ ul {
 
 .main_about > h1 {
     color: #00547a;
+}
+
+.main_about > h1, .main_work > h1, .main_agency > h1 {
+    transition: 400ms all ease;
+    transform-origin: center center;
+    opacity: 0.5;
+}
+
+.main_agency:hover > h1, .main_about:hover > h1, .main_work:hover > h1 {
+    opacity: 1;
+    transform: translateY(30px);
 }
 
 .agency_transitioner {
